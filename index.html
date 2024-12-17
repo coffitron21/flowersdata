@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Classifier</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+    <h1>Flower Classifier with TensorFlow.js</h1>
+
+    <!-- Поле для загрузки изображения -->
+    <input type="file" id="uploadImage" accept="image/*">
+    <br><br>
+
+    <!-- Загрузка изображения и кнопка Start -->
+    <img id="image" width="300" style="display: none;" />
+    <br>
+    <button id="startButton" style="display: none;">Start</button>
+    <br><br>
+
+    <!-- Поле для вывода результата -->
+    <h2>Prediction: <span id="prediction"></span></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
